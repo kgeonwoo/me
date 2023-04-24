@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="theme-color" content="#000000" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="./index.css" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>AppList</title>
+</head>
+
+<body>
+
+    <!-- // 간단한 기본 메뉴 -->
+    <header>
+        <div class="container">
+            <div class="menu" mode="2">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href=''>MyAppList</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href='#'>Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="goAboutMe" class="nav-link" href='#aboutMe'>AboutMe</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="goskill" class="nav-link" href='#skill'>Skill</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        List
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item gc_1" href="#crs">App1</a></li>
+                                        <!-- <li><a class="dropdown-item gc_2" href="#crs">App2</a></li>
+                                        <li><a class="dropdown-item gc_3" href="#crs">App3</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                            </hr>
+                                        </li>
+                                        <li><a class="dropdown-item cm_3" href="">Something else here</a></li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- 배경화면 -->
+    <div class="bg_img">
+
+    </div>
+
+    <!-- 사이드 컨트롤러 -->
+    <div class="side_btn">
+        <p>Controller</p>
+        <hr>
+        <ul>
+            <li>
+                <a class="goApp gc_1" href="#App1">
+                    App1
+                </a>
+            </li>
+            <!-- <li>
+                <a class="goApp gc_2" href="#App2">
+                    App2
+                </a>
+            </li>
+            <li>
+                <a class="goApp gc_3" href="#App3">
+                    App3
+                </a>
+            </li> -->
+        </ul>
+    </div>
+
+    <!-- about -->
+    <div class="container s_con">
+        <div id="aboutMe" class="gray-con">
+            <div class="app-text">
+                <h1 class="con_title">AboutMe</h1>
+                <div class="ab_con">
+                    <h1>
+                        <span class="mname">
+                            김건우
+                        </span>
+                        입니다.
+                    </h1>
+                    <p>
+                        사람들에게 영향을 주는것을 만들고 디자인하는 개발자를 꿈꾸고 있습니다.
+                    </p>
+                    <p>
+                        전화번호 : 010-9742-7574
+                    </p>
+                    <br><br><br>
+                    <div>
+                        <h1>Education</h1>
+                        <p>
+                            TIS정보기술교육센터(국비지원 6개월과정)
+                        </p>
+                        <p>
+                            코리아IT아카데미학원 - Android앱 (12/03 ~ 03/16)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skill -->
+    <div class="container s_con">
+        <div class="sul">
+            <div class="gray-con">
+                <div class="app-text">
+                    <h6 class="con_title">Skills</h6>
+                    <ul class="row">
+                        <li class="skill_tag col-3">
+                            <h4 class="skt">Language</h4>
+                            <hr />
+                            <ul>
+                                <li class="sk_con">Java</li>
+                                <li class="sk_con">Kotlin</li>
+                                <li class="sk_con">JavaScript</li>
+                                <li class="sk_con">SQL</li>
+                            </ul>
+                        </li>
+                        <li class="skill_tag col-3">
+                            <h4 class="skt">
+                                Web FE
+                            </h4>
+                            <hr />
+                            <ul>
+                                <li class="sk_con">HTML</li>
+                                <li class="sk_con">CSS</li>
+                                <li class="sk_con">React</li>
+                                <li class="sk_con">Jquery</li>
+                                <li class="sk_con">Bootstrap</li>
+                            </ul>
+                        </li>
+                        <li class="skill_tag col-3">
+                            <h4 class="skt">
+                                Web BE
+                            </h4>
+                            <hr />
+                            <ul>
+                                <li class="sk_con">Node.js</li>
+                                <li class="sk_con">Spring</li>
+                                <li class="sk_con">JPA</li>
+                                <li class="sk_con">MyBatis</li>
+                                <li class="sk_con">Apache Tomcat</li>
+                            </ul>
+                        </li>
+                        <li class="skill_tag col-3">
+                            <h4 class="skt">
+                                Tool
+                            </h4>
+                            <hr />
+                            <ul>
+                                <li class="sk_con">Eclipse</li>
+                                <li class="sk_con">Visual Code</li>
+                                <li class="sk_con">Android Studio</li>
+                                <li class="sk_con">Git</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 간단한 앱화면 캐러셀 -->
+    <div class="container s_con">
+        <div class="gray-con">
+            <div class="app-text">
+                <div id="crs">
+                    <div class="crs crs_1">
+                        <h2 class="crs_n">app name</h2>
+
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                            data-bs-touch="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/mld_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/mld_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/mld_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/mld_4.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/mld_5.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="crs crs_2">
+                        <h2>app name</h2>
+
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                            data-bs-touch="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../images/noImage.png" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/noImage.png" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/noImage.png" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src='public/noImage.png' class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src='public/noImage.png' class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
