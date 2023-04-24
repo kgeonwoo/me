@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
 
     $('.crs').hide()
     $('.crs_1').show()
